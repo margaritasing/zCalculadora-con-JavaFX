@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="290.0" prefWidth="420.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller">
+   <children>
+      <SplitPane id="AnchorPane" dividerPositions="0.5" orientation="VERTICAL" prefHeight="280.0" prefWidth="420.0">
+        <items>
+          <AnchorPane maxHeight="30.0" minHeight="10.0" prefWidth="419.0">
+               <children>
+                   <!--El resultado-->
+                  <TextField fx:id="entrada" layoutX="-1.0" onAction="#evaluar" prefHeight="38.0" prefWidth="420.0" />
+               </children></AnchorPane>
+            <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                   <!--Formato de Columnas-->
+                  <GridPane gridLinesVisible="true" prefHeight="260.0" prefWidth="420.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                         <!--Botones-->
+                        <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="63.0" prefWidth="108.0" text="1" />
+                        <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="66.0" prefWidth="118.0" text="2" GridPane.columnIndex="1" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="63.0" prefWidth="105.0" text="3" GridPane.columnIndex="2" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="64.0" prefWidth="106.0" text="4" GridPane.rowIndex="1" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="67.0" prefWidth="110.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="71.0" prefWidth="109.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="67.0" prefWidth="115.0" text="7" GridPane.rowIndex="2" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="64.0" prefWidth="119.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="75.0" prefWidth="113.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="65.0" prefWidth="116.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#borrar" prefHeight="67.0" prefWidth="112.0" text="C" GridPane.rowIndex="3" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="72.0" prefWidth="108.0" text="+" GridPane.columnIndex="3" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="72.0" prefWidth="108.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="70.0" prefWidth="114.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#otroBoton" prefHeight="69.0" prefWidth="115.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                         <!-- simbolo Igual -->
+                         <Button defaultButton="true" mnemonicParsing="false" onAction="#evaluar" prefHeight="71.0" prefWidth="111.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                     </children>
+                  </GridPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
